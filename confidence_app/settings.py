@@ -39,8 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #third party
     'rest_framework',
+    'webpack_loader',
     #local apps
     'api',
+]
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "assets"),
 ]
 
 MIDDLEWARE_CLASSES = [
